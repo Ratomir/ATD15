@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.161
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpFunction", "..\AzureFunctionKubernetes\HttpFunction\HttpFunction.csproj", "{64FF63A3-14C5-41F7-A96B-C3529355D099}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "..\IaCPulumiDotNet\Infra.csproj", "{32B48294-23B1-4818-8BD6-1A23B0F7C248}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KedaDotNet", "..\KedaDotNet\KedaDotNet.csproj", "{CFE45555-0793-472F-8CB0-2CAA22A0F103}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer", "..\Producer\Producer.csproj", "{201AA16B-5B2D-42BC-BCC5-F9527D716970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64FF63A3-14C5-41F7-A96B-C3529355D099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FF63A3-14C5-41F7-A96B-C3529355D099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FF63A3-14C5-41F7-A96B-C3529355D099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FF63A3-14C5-41F7-A96B-C3529355D099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B48294-23B1-4818-8BD6-1A23B0F7C248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B48294-23B1-4818-8BD6-1A23B0F7C248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B48294-23B1-4818-8BD6-1A23B0F7C248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B48294-23B1-4818-8BD6-1A23B0F7C248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE45555-0793-472F-8CB0-2CAA22A0F103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE45555-0793-472F-8CB0-2CAA22A0F103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE45555-0793-472F-8CB0-2CAA22A0F103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE45555-0793-472F-8CB0-2CAA22A0F103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201AA16B-5B2D-42BC-BCC5-F9527D716970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201AA16B-5B2D-42BC-BCC5-F9527D716970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201AA16B-5B2D-42BC-BCC5-F9527D716970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201AA16B-5B2D-42BC-BCC5-F9527D716970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {935E9149-D473-48B5-AC5E-D4A18402F14C}
+	EndGlobalSection
+EndGlobal

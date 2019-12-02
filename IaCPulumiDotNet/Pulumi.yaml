@@ -1,0 +1,3 @@
+name: IaC-Pulumi-Kube
+runtime: dotnet
+description: Demo of IaC session at the ATD15

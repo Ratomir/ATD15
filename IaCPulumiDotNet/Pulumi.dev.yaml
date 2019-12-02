@@ -1,0 +1,5 @@
+config:
+  IaC-Pulumi-Kube:env: dev
+  IaC-Pulumi-Kube:location: NorthEurope
+  IaC-Pulumi-Kube:projectname: atd15
+  azure:location: NorthEurope

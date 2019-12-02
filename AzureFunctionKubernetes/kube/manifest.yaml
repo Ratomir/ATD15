@@ -1,0 +1,44 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: azurefunc
+  labels:
+    component: azurefunc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      component: "azurefunc"
+  template:
+    metadata:
+      labels:
+        component: "azurefunc"
+    spec:
+      containers:
+        - name: azurefunc
+          image: "atd15cr.azurecr.io/azurefunc:latest"
+          imagePullPolicy: "Always"
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "64Mi"
+            limits:
+              cpu: "400m"
+              memory: "256Mi"
+          livenessProbe:
+            httpGet:
+              path: /api/healthcheck
+              port: http
+            timeoutSeconds: 5
+            initialDelaySeconds: 20
+          readinessProbe:
+            httpGet:
+              path: /api/healthcheck
+              port: http
+            timeoutSeconds: 5
+            initialDelaySeconds: 20
+      imagePullSecrets:
+        - name: acrkey
