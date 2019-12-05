@@ -1,0 +1,15 @@
+az aks get-credentials -g atd15-rg -n atd15aks
+
+kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+
+----------------
+az acr build --image azurefunc:latest --registry atd15cr --file Dockerfile .
+----------------
+
+az aks browse -g atd15-rg -n atd15aks
+
+----------------
+
+func kubernetes deploy --name sample-deploy-name --registry atd15cr.azurecr.io/azurefunc:eh --dotnet --dry-run > deploy.yaml
+
+watching - kubectl get hpa -w
