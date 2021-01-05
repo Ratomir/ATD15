@@ -11,8 +11,8 @@ namespace producer
     public class Program
     {
         private static EventHubClient eventHubClient;
-        private const string EventHubNamespace = "atd15ehns-v1";
-        private const string EventHubName = "atd15eh-v1";
+        private const string EventHubNamespace = "evhns-rv187";
+        private const string EventHubName = "evh-rv187";
         private const string EventHubKey = "XXX";
         private const string EventHubConnectionString = "Endpoint=sb://{0}.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey={1}";
 

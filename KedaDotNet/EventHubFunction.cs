@@ -13,7 +13,7 @@ namespace KedaDotNet
     public static class EventHubFunction
     {
         [FunctionName("EventHubFunction")]
-        public static async Task Run([EventHubTrigger("atd15eh-v1", Connection = "EventHub")] EventData[] events, ILogger log)
+        public static async Task Run([EventHubTrigger("evh-rv187", Connection = "EventHub")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
             string connString = Environment.GetEnvironmentVariable("TableStorage");
