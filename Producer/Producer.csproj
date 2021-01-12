@@ -9,4 +9,10 @@
     <PackageReference Include="Microsoft.Azure.EventHubs" Version="4.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="data_json.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
